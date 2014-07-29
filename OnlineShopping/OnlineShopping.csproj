@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF894128-FF18-4C40-890B-452EAE532959}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineShopping</RootNamespace>
+    <AssemblyName>OnlineShopping</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50731.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\OnlineShopping.mdf" />
+    <Content Include="App_Data\OnlineShopping_log.ldf">
+      <DependentUpon>OnlineShopping.mdf</DependentUpon>
+    </Content>
+    <Content Include="images\10_special-offer.jpg" />
+    <Content Include="images\ae-mlb.jpg" />
+    <Content Include="images\buttons\ADD PRODUCTS.png" />
+    <Content Include="images\buttons\blue-buy-now-button.jpg" />
+    <Content Include="images\buttons\cash-on-delivery.jpg" />
+    <Content Include="images\buttons\EDIT PRODUCTS.png" />
+    <Content Include="images\buttons\icon_changePassword.png" />
+    <Content Include="images\buttons\icon_continue.png" />
+    <Content Include="images\buttons\MANAGE.png" />
+    <Content Include="images\buttons\profile-badge-icon_full.jpg" />
+    <Content Include="images\buttons\recentpurchase.jpg" />
+    <Content Include="images\buttons\showPurchase.png" />
+    <Content Include="images\buttons\VIEW PRODUCTS.png" />
+    <Content Include="images\buttons\view-cart-button.jpg" />
+    <Content Include="images\flipkart-diwali-offer-mobiles.jpg" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\org_1_Tesco-Clothing-25-Off.jpg" />
+    <Content Include="images\products\checkout.jpg" />
+    <Content Include="images\products\cyber_Shot.jpg" />
+    <Content Include="images\products\dell axise7943.jpg" />
+    <Content Include="images\products\galaxy.jpg" />
+    <Content Include="images\products\hcl n30.jpg" />
+    <Content Include="images\products\iphone.jpg" />
+    <Content Include="images\products\samsung_star_next_s5233v.jpg" />
+    <Content Include="images\saleShoesWomen.jpg" />
+    <Content Include="images\snapdeal-watch.jpg" />
+    <Content Include="Pages\Account_Create.aspx" />
+    <Content Include="Pages\AdminDelete.aspx" />
+    <Content Include="Pages\AdminEntry.aspx" />
+    <Content Include="Pages\AdminProfile.aspx" />
+    <Content Include="Pages\AdminViewFeedback.aspx" />
+    <Content Include="Pages\AdminViewProducts.aspx" />
+    <Content Include="Pages\AdminViewPurchase.aspx" />
+    <Content Include="Pages\AdminViewUsers.aspx" />
+    <Content Include="Pages\Cart.aspx" />
+    <Content Include="Pages\CashOnDeliveryAddress.aspx" />
+    <Content Include="Pages\Change_Password.aspx" />
+    <Content Include="Pages\ContactUs.aspx" />
+    <Content Include="Pages\Feedback.aspx" />
+    <Content Include="Pages\images\apple.jpg" />
+    <Content Include="Pages\images\brazuca.jpg" />
+    <Content Include="Pages\images\Check-shirts-for-Men-11.jpg" />
+    <Content Include="Pages\images\cyber_Shot.jpg" />
+    <Content Include="Pages\images\image3.jpg" />
+    <Content Include="Pages\images\lumia.jpg" />
+    <Content Include="Pages\images\lz448_bl_a_.jpg" />
+    <Content Include="Pages\images\new_watches_perfect_timing_20_600x450.jpg" />
+    <Content Include="Pages\images\samsung.jpg" />
+    <Content Include="Pages\images\Using-Word-Mobile-on-Nokia-Lumia.jpg" />
+    <Content Include="Pages\ProductDetails.aspx" />
+    <Content Include="Pages\Profile.aspx" />
+    <Content Include="Pages\RecentPurchases.aspx" />
+    <Content Include="Pages\SearchResults.aspx" />
+    <Content Include="Pages\ViewAdminProfile.aspx" />
+    <Content Include="Pages\ViewProducts.aspx" />
+    <Content Include="Pages\View_Profile.aspx" />
+    <Content Include="res\Default\clothing.jpg" />
+    <Content Include="res\Default\home-appliances-slide2.jpg" />
+    <Content Include="res\Default\internet-shopping.jpg" />
+    <Content Include="res\Default\razer20laptop-large-100016095-large.jpg" />
+    <Content Include="res\Default\Shopping-Online.jpg" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassDataConnection.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Account_Create.aspx.cs">
+      <DependentUpon>Account_Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account_Create.aspx.designer.cs">
+      <DependentUpon>Account_Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminDelete.aspx.cs">
+      <DependentUpon>AdminDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminDelete.aspx.designer.cs">
+      <DependentUpon>AdminDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminEntry.aspx.cs">
+      <DependentUpon>AdminEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminEntry.aspx.designer.cs">
+      <DependentUpon>AdminEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminProfile.aspx.cs">
+      <DependentUpon>AdminProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminProfile.aspx.designer.cs">
+      <DependentUpon>AdminProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminViewFeedback.aspx.cs">
+      <DependentUpon>AdminViewFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminViewFeedback.aspx.designer.cs">
+      <DependentUpon>AdminViewFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminViewProducts.aspx.cs">
+      <DependentUpon>AdminViewProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminViewProducts.aspx.designer.cs">
+      <DependentUpon>AdminViewProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminViewPurchase.aspx.cs">
+      <DependentUpon>AdminViewPurchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminViewPurchase.aspx.designer.cs">
+      <DependentUpon>AdminViewPurchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminViewUsers.aspx.cs">
+      <DependentUpon>AdminViewUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdminViewUsers.aspx.designer.cs">
+      <DependentUpon>AdminViewUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CashOnDeliveryAddress.aspx.cs">
+      <DependentUpon>CashOnDeliveryAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CashOnDeliveryAddress.aspx.designer.cs">
+      <DependentUpon>CashOnDeliveryAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Change_Password.aspx.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Change_Password.aspx.designer.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RecentPurchases.aspx.cs">
+      <DependentUpon>RecentPurchases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RecentPurchases.aspx.designer.cs">
+      <DependentUpon>RecentPurchases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SearchResults.aspx.cs">
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SearchResults.aspx.designer.cs">
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewAdminProfile.aspx.cs">
+      <DependentUpon>ViewAdminProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewAdminProfile.aspx.designer.cs">
+      <DependentUpon>ViewAdminProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewProducts.aspx.cs">
+      <DependentUpon>ViewProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewProducts.aspx.designer.cs">
+      <DependentUpon>ViewProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\View_Profile.aspx.cs">
+      <DependentUpon>View_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\View_Profile.aspx.designer.cs">
+      <DependentUpon>View_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesHandler.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteAdmin.Master.cs">
+      <DependentUpon>SiteAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteAdmin.Master.designer.cs">
+      <DependentUpon>SiteAdmin.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteAdmin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1599</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

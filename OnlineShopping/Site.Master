@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="OnlineShopping.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    EasyCart!
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                &nbsp;<asp:TextBox ID="tb_Search" runat="server" Width="265px"></asp:TextBox>
+&nbsp;
+                <asp:Button ID="btn_Search" runat="server" Text="Search" 
+                    onclick="btn_Search_Click" />
+&nbsp;
+                &nbsp;<asp:LinkButton ID="lbtn_Logout" runat="server" 
+                    onclick="lbtn_Logout_Click">Log Out</asp:LinkButton>
+&nbsp;</div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Pages/Profile.aspx" Text="Home"/>
+                        <asp:MenuItem Text="Electronics" 
+                            Value="Electronics &amp; Accessories">
+                            <asp:MenuItem NavigateUrl="~/Pages/ViewProducts.aspx?cat=M1" Text="Mobile" 
+                                Value="Mobile"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Pages/ViewProducts.aspx?cat=L1" Text="Laptop" 
+                                Value="Laptop"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Pages/ViewProducts.aspx?cat=C1" Text="Camera" 
+                                Value="Camera"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Men" Value="Clothing">
+                            <asp:MenuItem Text="Clothing" Value="Clothing" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=MC1"></asp:MenuItem>
+                            <asp:MenuItem Text="Footwear" Value="Footwear" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=MF1"></asp:MenuItem>
+                            <asp:MenuItem Text="Watches" Value="Watches" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=MW1"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Women" Value="Home Appliances">
+                            <asp:MenuItem Text="Clothing" Value="Clothing" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=FC1"></asp:MenuItem>
+                            <asp:MenuItem Text="Footwear" Value="Footwear" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=FF1"></asp:MenuItem>
+                            <asp:MenuItem Text="Watches" Value="Watches" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=FW1"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Music &amp; Media">
+                            <asp:MenuItem Text="Books" Value="Books" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=B1"></asp:MenuItem>
+                            <asp:MenuItem Text="Music" Value="Music" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=Mu1"></asp:MenuItem>
+                            <asp:MenuItem Text="Games" Value="Games" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=G1"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Home &amp; Kitchen" Value="Home &amp; Kitchen">
+                            <asp:MenuItem Text="Home Appliances" Value="Home Appliances" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=HA1"></asp:MenuItem>
+                            <asp:MenuItem Text="Kitchen Appliances" Value="Kitchen Appliances" 
+                                NavigateUrl="~/Pages/ViewProducts.aspx?cat=KA1">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Pages/ContactUs.aspx" Text="Contact Us" 
+                            Value="Contact Us"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Pages/Feedback.aspx" Text="Feedback" 
+                            Value="Feedback"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+      
+    </div>
+    
+    </form>
+</body>
+</html>

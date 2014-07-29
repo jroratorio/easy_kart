@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteAdmin.master.cs" Inherits="OnlineShopping.SiteAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    EasyCart!
+                </h1>
+            </div>
+             <div class="loginDisplay">
+                &nbsp;<asp:LinkButton ID="lbtnLogOut" 
+                     runat="server" onclick="lbtnLogOut_Click">Log Out</asp:LinkButton>
+&nbsp;</div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Pages/AdminProfile.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/Pages/AdminEntry.aspx" Text="Add Products"/>
+                        <asp:MenuItem NavigateUrl="~/Pages/AdminDelete.aspx" Text="Delete Products"/>
+                        <asp:MenuItem NavigateUrl="~/Pages/AdminViewProducts.aspx" Text="View All Products"/>
+                        <asp:MenuItem NavigateUrl="~/Pages/AdminViewUsers.aspx" Text="Manage Users"/>
+                        <asp:MenuItem NavigateUrl="~/Pages/ViewAdminProfile.aspx" Text="My Profile"/>
+                        <asp:MenuItem NavigateUrl="~/Pages/AdminViewFeedback.aspx" Text="Feedbacks"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
